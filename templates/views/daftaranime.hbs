@@ -1,0 +1,50 @@
+{{>header}}
+<div class="container">
+    <body class="d-flex flex-column">
+        <div id="page-content">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <h1 class="font-weight-light mt-4 text-white">Free Download Now</h1>
+                        <p class="lead text-white-50">Free online video downloader for YouTube, Instagram, Facebook,
+                            Twitter and many other sites .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="card" style="border: 0px;">
+            <div class="card-header text-white bg-primary mb-3">Daftar Anime</div>
+            <div class="card-body">
+                <div class="row" id="card-loader" style="text-align: center;">
+                    {{#each anime.top}}
+                    <div class="col-sm-3" style="margin-bottom: 20px;">
+                        <div class="card">
+                            <img class="card-img-top" src="{{image_url}}" alt="Card image cap"
+                                style="width: 100%;height: 200px;">
+                            <div class="card-header" style="height: 80px;">
+                                <h5 class="card-title text-center"><a href="/anime/{{mal_id}}" class="card-text"
+                                        style="font-size: 16px;">{{title}}</a></h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 col-xs-3"><a href="#">180p</a></div>
+                                    <div class="col-6 col-xs-3"><a href="#">360p</a></div>
+                                    <div class="w-100">
+                                    </div>
+                                    <div class="col-6 col-xs-3"><a href="#">720p</a></div>
+                                    <div class="col-6 col-xs-3"><a href="#">1440p</a></div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-block">Watch</a>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    </script>
+                </div>
+            </div>
+    </body>
+</div>
+{{>footer}}
